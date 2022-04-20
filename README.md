@@ -1,5 +1,13 @@
 # Cloud-Security
 
+The attached PDF shows a secure Azure Cloud configuration. While this architecture is secure enough, we can and should further harden setups by:
+Locking the root account and limiting sudo access of the admin account on the jump box.
+Implementing log monitoring on the jump box.
+Implementing two-factor authentication for SSH login to the jump box.
+Implementing a host firewall (UFW or IPtables) on the jump box.
+Limiting jump box network access with a virtual private network (VPN).
+Limiting the number of machines that our jump box can access
+
 The fact that cloud networks are virtualized and defined by software gives them numerous security benefits:
 
 - **Ground-up security**: From a security perspective, the cloud presents an opportunity to build a secure system from the beginning, as opposed to trying to implement new security measures on old systems.
